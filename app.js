@@ -9,7 +9,7 @@ let btn = document.getElementById("btn");  // получаем кнопку по
 
 // слушатель события нажатия кнопки
 btn.addEventListener("click", function () {
-    tg.MainButton.setText("Success!");
+    tg.MainButton.setText(tg.initData);
     tg.MainButton.show();
     tg.sendData("sendTestMessage");  // отправка в телеграм бота
 });
