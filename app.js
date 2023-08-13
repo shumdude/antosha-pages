@@ -9,7 +9,8 @@ let btn = document.getElementById("btn");  // получаем кнопку по
 let user = document.getElementById("user");
 // слушатель события нажатия кнопки
 btn.addEventListener("click", function () {
-    tg.MainButton.setText(tg.initData);
+    tg.MainButton.setText("AAA");
+    let data = tg.initData;
     user.textContent = "AAAAA";
     tg.MainButton.show();
     tg.sendData("sendTestMessage");  // отправка в телеграм бота
