@@ -1,40 +1,31 @@
-body {
-	margin: 0;
-	padding: 0;
+body{
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	font-size: 18px;
-	color: black;
-	background: white;
 }
 
-.container {
-	max-width: 390px;
+.hint{
+	color: var(--tg-theme-hint-color);
 }
 
-.inner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+.link{
+	color: var(--tg-theme-link-color);
 }
 
-.item {
-	text-align: center;
-	border: 10px black;
-	border-radius: 1%;
-	background-color: whitesmoke;
-}
-
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
+.button{
+	background: var(--tg-theme-button-color);
+	color: var(--tg-theme-button-text-color);
 	border: none;
-	background: rgb(0, 0, 0);
-	border-radius: 10px;
-	color: #a1ffab;
-	text-transform: uppercase;
-	font-weight: 700;
-	transition: background .2s linear;
+	font-size: 18px;
 }
 
-.btn:hover {
-	background: #ffd3d3;
+.button:not(:last-child){
+	margin-bottom: 20px
+}
+
+#usercard{
+	text-align: center;
 }
