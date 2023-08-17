@@ -43,9 +43,7 @@ usercard.appendChild(profPhoto);
 let profName = document.createElement('p'); //создаем параграф
 profName.innerText = `Твоё первое имя: ${tg.initDataUnsafe.user.first_name}
 Твоё второе имя: ${tg.initDataUnsafe.user.last_name}
-Твоё имя пользователя: @${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})
-Бот? ${tg.initDataUnsafe.user.is_bot}
-Есть премиум? ${tg.initDataUnsafe.user.is_premium}`;
+Твоё имя пользователя: @${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
 usercard.appendChild(profName); //добавляем
 
 let userid = document.createElement('p'); //создаем еще параграф
